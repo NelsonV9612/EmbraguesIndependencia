@@ -224,12 +224,13 @@ body {
 }
 .social__link a{
     margin-right: 10px;
+    color: #000;
 }
 .rights{
     display: flex;
     margin: auto;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
     align-items: end;
     font-size: 14px;
     color: #aaa;
