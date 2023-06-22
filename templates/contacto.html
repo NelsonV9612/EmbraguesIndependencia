@@ -33,26 +33,36 @@
           <h2 class="form__title">Forumulario de contacto</h2>
           <form action="" class="form__container">
             <div class="form__input formName" >
-              <label for="">Nombre</label>
-              <input type="text" required>
+              <label for="nombre">
+                <span>Nombre</span>
+                <input type="text" required autocomplete="name" name="nombre" id="nombre">
+              </label>
             </div>
-            <div class="form__input formLastName">
-              <label for="">Apellido</label>
-              <input type="text" required>
+            <div class="form__input formLastName" >
+              <label for="apellido">
+                <span>Apellido</span>
+                <input type="text" required  name="apellido" id="apellido">
+              </label>
             </div>
             <div class="form__input formEmail">
-              <label for="">Email</label>
-              <input type="email" required>
+              <label for="email">
+                <span>Email</span>
+                <input type="email" required name="email" id="email">
+              </label>
             </div>
             <div class="form__input formPhone">
-              <label for="">Telefono</label>
-              <input type="number" required>
+              <label for="tel">
+                <span>Telefono</span>
+                <input type="tel" required name="telefono" id="tel">
+              </label>             
             </div>
             <div class="form__input formQuery">
-              <label for="">Consulta</label>
-              <textarea name="" id="" ></textarea>
+              <label for="consulta">
+                <span>Consulta</span>
+                <textarea name="consulta" id="consulta" ></textarea>
+              </label>            
             </div>
-            <input type="button" value="Enviar" class="button formButton">
+            <input type="submit" value="Enviar" class="button formButton">
           </form>
         </div>
         <div class="address">
@@ -63,7 +73,7 @@
             <span>Telefono</span>
             <p>0800-000-000</p>
             <span>Email</span>
-            <p>embraguesindependencia</p>
+            <p>embraguesindependencia@hotmail.com</p>
             <p class="">En embragues independencia nos encantaría saber de usted. Por favor dejar infromación acerca de su consulta y lo contactaremos a la brevedad.</p>
           </div>
         </div>
