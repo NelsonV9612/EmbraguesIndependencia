@@ -70,7 +70,13 @@ body {
     line-height: 48px;
     font-size: 2.2em;
 }
-
+.presentation__description h1::after{
+    content: " ";
+    width: 45px;
+    height: 5px;
+    display: block;
+    background-color: #51A3E1;
+}
 .presentation__description p{
     margin-top: 1.5em;
     line-height: 25px;
@@ -115,7 +121,22 @@ body {
     height: 100%;
     justify-content: space-evenly;
 }
-.description p{
+.description h2{
+    color: #887;
+    font-size: 2.5em;
+   
+
+}
+.description h2::after{
+    content: "";
+    background-color: #51A3E1;
+    display: block;
+    width: 45px;
+    height: 5px;
+    margin-top: 10px;
+
+}
+.intro__text{
     line-height: 20px;
     color: #887;
 }
@@ -150,7 +171,6 @@ body {
 .location{
     width: 100%;
     margin: auto;
-    
 }
 .location__desciption{
     background: #51A3E1;
@@ -175,6 +195,20 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.whatsapp-button{
+    position: fixed;
+    bottom: 12vh;
+    right: 5vh;
+    z-index: 9999;
+    
+
+}
+.whatsapp-button img{
+    width: 3em;
+    height: 3em;
+    filter: drop-shadow(1px 2px 3px #000);
+
 }
 /* ------------footer------------ */
 .footer{

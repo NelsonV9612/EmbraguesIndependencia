@@ -17,9 +17,18 @@ body{
     border-bottom-left-radius: 50px;
 }
 .contact__h2{
+    padding-top: .3em;
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1.5em;
     margin-left: 5%;
+}
+.contact__h2::after{
+    content: " ";
+    width: 45px;
+    height: 5px;
+    background-color: #51A3E1;
+    display: block;
+
 }
 .contact__container{
     background: url(../banner/direccion.png);
