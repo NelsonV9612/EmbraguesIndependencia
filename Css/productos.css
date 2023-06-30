@@ -1,8 +1,7 @@
-@import url(./style.css);
+@import url(style.css);
 
 .product-container{
     width: 90%;
-    height: 100vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -49,27 +48,52 @@
 }
 .product-type{
     padding: 0 2%;
+    margin-bottom: 1em;
 }
-.product-type__list{
+.product__list{
     border-top: 1px solid #887;
     border-left: 1px solid #887;
     border-right: 1px solid #887;
     display: flex;
     justify-content: space-evenly;
     height: 240px;
+    align-items: center;
 }
-.intro-img{
-    padding: 10px 0; 
+.product__list:last-child{
+    border-bottom: 1px solid #887;
 }
-
+.intro-img{ 
+    background-color: #ccc;
+    min-width:  400px;
+    min-height: 220px;
+}
+.intro-img img{
+    min-width: 100%;
+    max-height: 210px;
+    object-fit: contain;
+}
 .article{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-left: 30px;
+    display: grid;
+    grid-template-columns: minmax(350px,450px);
+    grid-template-rows: repeat(3, 4em);
+    padding: 30px;
+    align-items: center;
+    
 }
-
+.article__header{
+    justify-self: flex-start;
+}
+.article__title{
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #887;
+}
 .intro-product{
     padding-bottom: 1em;
-    
+}
+.intro-product p{
+    line-height: 25px;
+    width: 90%;
+}
+.article-consult{
+    margin-left: 0;
 }
