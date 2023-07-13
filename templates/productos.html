@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embragues Independencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/reset.css/reset.css">
     <link rel="shortcut icon" href="../banner/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../Css/productos.css">
@@ -13,13 +14,14 @@
   <header class="header">
     <nav class="nav">
       <div class="nav__logo">
-          <img src="../banner/logo.png" alt="Logo Engranajes" class="nav__img">
-          <p>Embragues Independencia</p>
+          <a href="../index.html"><img src="../banner/logotipo.png" alt="Logo Engranajes" class="nav__img--logo"></a>
       </div>
-      <ul class="nav__list">
+      <button type="button" class="nav__button" id="nav__open"><i class="fa-solid fa-bars"></i></button>
+      <button type="button" class="nav__button--close" id="nav__close"><i class="fa-solid fa-xmark"></i></i></button>
+      <ul class="nav__list" id="nav__mobile">
         <li><a href="../index.html" class="nav__link">Inicio</a></li>
-        <li><a href="./productos.html" class="nav__link">Productos</a></li>
-        <li></i><a href="./contacto.html" class="nav__link">Contacto</a></li>
+        <li><a href="productos.html" class="nav__link">Productos</a></li>
+        <li></i><a href="contacto.html" class="nav__link">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -64,26 +66,12 @@
               </header>
               <div class="intro-product">
                 <p>
-                  Realizamos el recambio de embragues de camiones, autos camionetas, maquinarias agropecuarias
+                  Realizamos el recambio de embragues de camiones, autos camionetas, maquinarias agropecuarias, rectificación de volantes y cambio de forros.
                 </p>
               </div>
               <a href="./contacto.html" class="article-consult"><button type="button" class="button button--products">Consultar</button></a>
             </article>
           </li>
-          <!-- <li class="product__list">
-            <div class="intro-img"></div>
-            <article class="article">
-              <header class="article__header">
-                <h2 class="article__title"></h2>
-              </header>
-              <div class="intro-product">
-                <p>
-                  
-                </p>
-              </div>
-              <a href="./contacto.html" class="article-consult"><button type="button" class="button button--products">Consultar</button></a>
-            </article>
-          </li> -->
         </ul>
       </div>
     </section>
@@ -94,7 +82,7 @@
     </div>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="contenedor">
       <div class="footer__contact">
         <div class="contact">
           <h3>Detalles de conntacto</h3>
@@ -112,9 +100,10 @@
       </div>
       <div class="footer__social">
         <h3>Social</h3>
-        <div class="social__link">
+        <div class="social__link ">
           <a href="" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
           <a href="https://www.facebook.com/profile.php?id=100063697459863" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></i></a>
+          <a href="https://api.whatsapp.com/send?phone=2612147098" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
         </div>
       </div>
     </div>
@@ -124,6 +113,8 @@
       <p>&copy;Embragues Independencia. Todos los derechos reservados</p>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/341ef99b4c.js" crossorigin="anonymous"></script>
 </body>
 </html>

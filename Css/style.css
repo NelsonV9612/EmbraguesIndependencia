@@ -3,9 +3,6 @@
 /* -------------header--------------- */
 body {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background: radial-gradient(circle,#fff,#ccc);
 }
 
@@ -17,12 +14,12 @@ body {
     background-color: #126482;
     box-shadow: 0px 1px 3px #126482;
 }
+
 .nav{
    display: flex;
    justify-content: space-between;
-   padding: 3%;
+   padding: 2% 3%;
 }
-
 .nav__img{
     width: 40px;
     float: left;
@@ -34,11 +31,25 @@ body {
 .nav__logo p{
     font-size: 1.2em;
 }
+.nav__button{
+    display: none;
+    font-size: 2.2em;
+    background: transparent;
+    border: none;
+    cursor:pointer;
+}
+.nav__button--close{
+    display: none;
+ }
 
 .nav__list{
    display: flex;
    margin: 0 20px 0;
    align-items: center;
+}
+.dropdown{
+    background: transparent;
+    border: none;
 }
 
 .nav__link{
@@ -64,8 +75,8 @@ body {
     justify-content: space-around;
 }
 .presentation__description{
-    padding: 20px;
-    width: 50%;
+    padding: 30px 15px;
+    width: 60%;
 }
 .presentation__description h1{
     line-height: 48px;
@@ -82,6 +93,7 @@ body {
     margin-top: 1.5em;
     line-height: 25px;
     font-size: 1em;
+    width: 100%;
 }
 .presentation__img{
     width: 50%;
@@ -89,6 +101,7 @@ body {
 }
 .presentation__img img{
     height: 100%;
+    width: auto;
 }
 .products{
     width: 80%;
@@ -108,7 +121,7 @@ body {
 .products__img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 .products__description{
     grid-row:1/4;
@@ -188,11 +201,8 @@ body {
     text-decoration: underline;
     font-size: 1.6em;
 }
-.marcas{
-    height: 280px;
-}
+
 .marcas img{
-    height: 300px;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -218,11 +228,12 @@ body {
     outline: 1px solid #aaa;
     background-color: #126482;
 }
-.container{
+.contenedor{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0 20px;
+    margin: 0 40px;
 }
 .footer__contact{
     flex-grow:.8;
@@ -238,7 +249,6 @@ body {
 .footer__logo{
     display: flex;
     flex-grow: 1.8;
-    width: 10%;
     align-self: flex-start;
 }
 .logo{
@@ -258,6 +268,9 @@ body {
     margin-right: 10px;
     color: #000;
 }
+.social__link a:nth-child(3){
+    display: none;
+}
 .rights{
     display: flex;
     margin: auto;
@@ -268,4 +281,113 @@ body {
     color: #aaa;
     margin-top: 10px;
     align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+    .header{
+        height: auto;
+    }
+    .logo{
+        width: auto;
+    }
+    .rights{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .presentation__description{
+        width: 80%;
+    }
+    .presentation__img{
+        width: auto;
+        padding: 0;
+    }
+    .footer__contact{
+        margin: 0;
+    }
+}
+@media screen and (max-width:870px){
+    .presentation__description{
+        width: 100%;
+    }
+    .presentation__img{
+        display: none;
+    }
+    .whatsapp-button{
+        display: none !important;
+    }
+    .social__link a:nth-child(3){
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav__logo{
+        width: 30%;
+        margin: 20px auto;
+    }
+    .contenedor{
+        flex-direction: column;
+    }
+    .footer__contact{
+        order: 1;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer__logo{
+        order: 0;
+        margin: 0 auto;
+    }
+    .footer__social{
+        order: 3;
+        margin:0 auto;
+        text-align: center;
+    }
+    .contact__information{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .header{
+        position: relative;
+        height: 100px;
+    }
+    .nav__logo{
+        margin: 10px;
+    }
+    .nav__img--logo{
+        max-width: 250px;
+    }
+    .nav__button{
+        display: block;
+    }
+   
+    .nav__open--hidden{
+        visibility: hidden;
+    }
+    .nav__open--visible{
+        visibility: visible;
+    }
+    .nav__list{
+        visibility: hidden;
+        position: absolute;
+        flex-direction: column;
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+        right: 0;
+        top:100px;
+        align-items: start;
+        background-color: #51A3E1;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .nav__visible{
+        visibility: visible;
+    }
+    .contenedor{
+        margin: 0;
+    }
 }
