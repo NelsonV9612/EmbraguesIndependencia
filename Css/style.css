@@ -36,11 +36,8 @@ body {
     font-size: 2.2em;
     background: transparent;
     border: none;
-    cursor:pointer;
 }
-.nav__button--close{
-    display: none;
- }
+
 
 .nav__list{
    display: flex;
@@ -308,6 +305,9 @@ body {
     }
 }
 @media screen and (max-width:870px){
+    .main{
+        width: 100%;
+    }
     .presentation__description{
         width: 100%;
     }
@@ -363,12 +363,15 @@ body {
     .nav__button{
         display: block;
     }
-   
+    .nav__button--close{
+        display:none
+    }
+    .nav__close--visible{
+        display: block;
+    }
+
     .nav__open--hidden{
         visibility: hidden;
-    }
-    .nav__open--visible{
-        visibility: visible;
     }
     .nav__list{
         visibility: hidden;
@@ -384,8 +387,11 @@ body {
         justify-content: space-evenly;
         align-items: center;
     }
-    .nav__visible{
+    .nav__list--visible{
         visibility: visible;
+    }
+    .nav__link{
+        color: #fff;
     }
     .contenedor{
         margin: 0;
