@@ -393,6 +393,18 @@ body {
     .nav__link{
         color: #fff;
     }
+    /* ------------main--------- */
+    .main{
+        width: 100%;
+    }
+    .presentation{
+        height: auto;
+        border-bottom-left-radius:50px;
+        border-bottom-right-radius: 50px;
+    }
+    .products__description{
+        padding: 0;
+    }
     .contenedor{
         margin: 0;
     }
