@@ -13,6 +13,7 @@ body {
     width: 100%;
     background-color: #126482;
     box-shadow: 0px 1px 3px #126482;
+    z-index: 9999;
 }
 
 .nav{
@@ -167,6 +168,10 @@ body {
     border: none;
     border-radius: 4px;
     color: #fff;
+    transition: transform .3s;
+}
+.button:hover{
+    transform: scale(1.1);
 }
 .button-container{
     display: flex;
@@ -174,6 +179,7 @@ body {
 }
 .button--products{
     background: #DB6221;
+    margin-left: 0;
 }
 .button--after{
     background: #000;
@@ -224,6 +230,7 @@ body {
     margin-top: auto;
     outline: 1px solid #aaa;
     background-color: #126482;
+    position:relative
 }
 .contenedor{
     display: flex;
@@ -286,6 +293,7 @@ body {
     }
     .logo{
         width: auto;
+        margin-left: 15px;
     }
     .rights{
         width: auto;
@@ -393,7 +401,7 @@ body {
     .nav__link{
         color: #fff;
     }
-    /* ------------main--------- */
+   
     .main{
         width: 100%;
     }

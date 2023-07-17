@@ -31,7 +31,7 @@ body{
 
 }
 .contact__container{
-    background: url(../banner/direccion.png);
+    background: url(../banner/direccion.png) ;
     height: 55em;
     background-repeat: no-repeat;
     width: 100%;
@@ -130,4 +130,10 @@ body{
 }
 .address__description p:last-child{
     color: #DB6221;
+}
+
+/* ---------------mediaquery--------------- */
+
+@media screen and (max-width:1200px) {
+    
 }
