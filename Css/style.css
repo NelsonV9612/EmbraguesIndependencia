@@ -101,44 +101,42 @@ body {
     height: 100%;
     width: auto;
 }
+/* ------------------------------- */
 .products{
-    width: 80%;
+    height: 30rem;
     display: grid;
-    margin: auto;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,120px) 40px;
-    justify-items: center;
-    background: #fff;
-    padding: 40px 0;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,minmax(100px,250px)) 100px;
+    margin-top: 3rem;
 }
-.products__img{
-    grid-row:1/4;
-    grid-column: 1/3;
-    padding: 30px;
-}
-.products__img img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.detalle__producto{
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .products__description{
-    grid-row:1/4;
-    grid-column: 3/5;
-    padding: 30px;
+    height: 300px;
+    width: 100%;
+ }
+ .grillas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+.products__img{
+   object-fit: contain;
+   width: 400px;
+   height: 300px;
 }
+
 .description{
+    color: #000;
+    font-size: 1.5rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-.description h2{
-    color: #887;
-    font-size: 2.5em;
-   
 
-}
 .description h2::after{
     content: "";
     background-color: #51A3E1;
@@ -149,42 +147,41 @@ body {
 
 }
 .intro__text{
-    line-height: 20px;
+    line-height: 25px;
     color: #887;
 }
 .description a{
     align-self: center;
 }
-.products__button{
-    grid-column: 1/ 5;
-    grid-row: 4/5;
+
+.button-container{
+    position: relative;
+    grid-column: span 2;
     width: 80%;
+    justify-self: center;
+    margin-top: 1rem;
 }
 .button{
-    background: #aaa;
-    padding: 3px 10px;
+    background: #887;
     margin-left: 20px;
-    width: 8em;
-    border: none;
+    width: 7rem;
+    height: 1.8rem;
     border-radius: 4px;
     color: #fff;
-    transition: transform .3s;
-}
-.button:hover{
-    transform: scale(1.1);
-}
-.button-container{
-    display: flex;
-    justify-content: space-around;
-}
-.button--products{
-    background: #DB6221;
-    margin-left: 0;
-}
-.button--after{
-    background: #000;
+    justify-content: space-evenly;
+    opacity: 1;
 }
 
+
+.button--products{
+    background: #DB6221;
+    border: none;
+    margin-left: 0;
+    width:10rem;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------ */
 .location{
     width: 100%;
     margin: auto;

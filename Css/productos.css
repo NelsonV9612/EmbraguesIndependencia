@@ -45,6 +45,7 @@
 .description{
     line-height: 20px;
     margin-top: 20px;
+    width: auto;
 }
 .product-type{
     padding: 0 2%;
@@ -127,6 +128,7 @@
     }
     .intro-img{
         background:url(../banner/fondo_producto.jpg);
+        backdrop-filter: blur(10px);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

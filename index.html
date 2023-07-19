@@ -39,26 +39,40 @@
           <img src="banner/nosotros.png" alt="Discos de embragues">
         </div>
       </div>
-      <section class="products">
-        <div class="products__img">
-          <img src="banner/productoEmbrague.png" alt="Embrague">
-        </div>
-        <div class="products__description">
-          <div class="description">
-            <h2>Embragues</h2>
-            <p class="intro__text">En embragues independencia realizamos la venta de todo tipo de embragues por encargo, ya sea
-              autos, camionetas, camiones, maquinaria. También se realiza la reaparación de los mismos con garantía y la rectificación del volante.
-            </p>
-            <a href="./templates/productos.html"><button type="button" class="button button--products">Ver Productos</button></a>
+      <div id="carouselExampleCaptions" class="carousel slide products">
+        <div class="carousel-inner detalle__producto">
+          <div class="carousel-item active products__description">
+            <div class="grillas">
+              <img src="banner/productoEmbrague.png" class=" products__img" alt="Juego de embragues">
+              <div class=" description">
+                <h2>Embragues</h2>
+                <p class="intro__text">En embragues independencia realizamos la venta de todo tipo de embragues por encargo, ya sea
+                  autos, camionetas, camiones, maquinaria. También se realiza la reaparación de los mismos con garantía y la rectificación del volante.
+                </p>
+                <a href="./templates/productos.html"><button type="button" class="button button--products">Ver Productos</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  products__description">
+            <div class="grillas">
+              <img src="banner/freno.png" class="products__img" alt="Fenos a disco">
+              <div class="description">
+                <h2>Frenos</h2>
+                <p class="intro__text">Ralizamos el recambio de frenos, tanto como cambio de cintas, rectificación de campanas, venta de pastillas de frenos, cubetas y otros productos.</p>
+                <a href="#"><button type="button" class="button button--products">Ver Productos</button></a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="products__button">
-          <div class="button-container">
-            <button type="button" class="button button--after">Anterior</button>
-            <button type="button" class="button">Siguiente</button>
-          </div>
+        <div class="button-container">
+            <button class="carousel-control-prev ms-5 d-none d-sm-block button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span >Anterior</span>
+            </button>
+            <button class="carousel-control-next me-5 d-none d-sm-block button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span>Siguiente</span>
+            </button>
         </div>
-      </section>
+      </div>
       <section class="location">
         <div class="location__desciption">
           <h3>Ubicación</h3>
