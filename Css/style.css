@@ -101,7 +101,7 @@ body {
     height: 100%;
     width: auto;
 }
-/* ------------------------------- */
+
 .products{
     height: 30rem;
     display: grid;
@@ -157,7 +157,7 @@ body {
 .button-container{
     position: relative;
     grid-column: span 2;
-    width: 80%;
+    width: 65%;
     justify-self: center;
     margin-top: 1rem;
 }
@@ -319,8 +319,17 @@ body {
     .presentation__img{
         display: none;
     }
+    .products{
+        height: auto;
+        grid-template-rows: 300px 300px 60px;
+    }
+    .description{
+        width: auto;
+        height: 18rem;
+        justify-content: space-evenly;
+    }
     .whatsapp-button{
-        display: none !important;
+        display: none ;
     }
     .social__link a:nth-child(3){
         display: inline-block;
