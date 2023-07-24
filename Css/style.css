@@ -341,6 +341,9 @@ body {
         width: 30%;
         margin: 20px auto;
     }
+    .description{
+        padding: 10px;
+    }
     .contenedor{
         flex-direction: column;
     }

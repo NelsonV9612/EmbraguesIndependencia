@@ -163,6 +163,7 @@
     }
     .description{
         height: auto;
+        padding: 0;
     }
     .product-type{
         width: 90%;
