@@ -1,0 +1,72 @@
+.products{
+    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,minmax(100px,250px)) 100px;
+    margin-top: 3rem;
+    @include tablet{
+        height: auto;
+        grid-template-rows: 300px 300px 60px;
+    }
+    .detalle__producto{
+        grid-column: span 2;
+        grid-row: span 2;
+        .products__description{
+            height: 300px;
+            width: 100%;
+            @include mobile{
+                padding: 0;
+            }
+            .grillas{
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .products__img{
+                    object-fit: contain;
+                    width: 400px;
+                    height: 300px;
+                }
+                .description{
+                    color: #000;
+                    font-size: 1.5rem;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    @include tablet{
+                        width: auto;
+                        height: 18rem;
+                        justify-content: space-evenly;
+                    }
+                    @include mobile-landscape{
+                        padding: 10px;
+                    }
+                    &>h2::after{
+                        content: " ";
+                        background-color: $adornoTitulo;
+                        display: block;
+                        width: 45px;
+                        height: 5px;
+                        margin-top: 10px;
+                    }
+                    .intro__text{
+                        line-height: 25px;
+                        color: #887;
+                    }
+                    a{
+                        align-self: center;
+                        
+                    }
+                }
+             }
+         }
+    }
+    .button-container{
+        position: relative;
+        grid-column: span 2;
+        width: 65%;
+        justify-self: center;
+        margin-top: 1rem;
+        
+    }
+}

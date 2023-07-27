@@ -1,0 +1,32 @@
+.button{
+    background: #887;
+    margin-left: 20px;
+    width: 7rem;
+    height: 1.8rem;
+    border-radius: 4px;
+    color: $fondo;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+.button--products{
+    background: $botonesTexto;
+    border: none;
+    margin-left: 0;
+    width:10rem;
+    font-size: 1rem;
+}
+.whatsapp-button{
+    position: fixed;
+    bottom: 12vh;
+    right: 5vh;
+    z-index: 9999;
+    @include tablet{
+        display: none;
+    }
+    img{
+        width: 3em;
+        height: 3em;
+        filter: drop-shadow(1px 2px 3px #000);
+    
+    }
+}

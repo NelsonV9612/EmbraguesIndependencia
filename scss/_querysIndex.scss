@@ -1,0 +1,28 @@
+@mixin desktop{
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin tablet-landscape{
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (max-width:870px){
+        @content;
+    }
+}
+@mixin mobile-landscape{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+
+@mixin mobile{
+    @media screen and (max-width:576px){
+        @content;
+    }
+}
