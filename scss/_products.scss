@@ -67,6 +67,13 @@
         width: 65%;
         justify-self: center;
         margin-top: 1rem;
+        @include mobile{
+            position: absolute;
+            align-self: self-start;
+            width: 100%;
+            opacity: 0;
+            margin: 0;
+        }
         
     }
 }

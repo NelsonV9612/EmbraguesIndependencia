@@ -17,6 +17,13 @@
   font-size: 1rem;
 }
 
+@media screen and (max-width: 576px) {
+  .btn-mob {
+    height: 80vh;
+    margin: 0;
+  }
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 12vh;
@@ -113,12 +120,7 @@
 .nav .nav__list .nav__link {
   text-decoration: none;
   margin: 0px 20px 0px;
-  color: #000;
-}
-@media screen and (max-width: 576px) {
-  .nav .nav__list .nav__link {
-    color: #fff;
-  }
+  color: #fff;
 }
 @media screen and (max-width: 576px) {
   .nav .nav__list--visible {
@@ -203,6 +205,15 @@
   width: 65%;
   justify-self: center;
   margin-top: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .products .button-container {
+    position: absolute;
+    align-self: self-start;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+  }
 }
 
 .presentation {

@@ -68,10 +68,7 @@
         .nav__link{
             text-decoration: none;
             margin: 0px 20px 0px;
-            color: $texto;
-            @include mobile{
-                color: #fff;
-            }
+            color: $fondo;
         }
     }
     .nav__list--visible{

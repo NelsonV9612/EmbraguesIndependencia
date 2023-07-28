@@ -15,6 +15,12 @@
     width:10rem;
     font-size: 1rem;
 }
+.btn-mob{
+    @include mobile{
+        height: 80vh;
+        margin: 0;
+    }
+}
 .whatsapp-button{
     position: fixed;
     bottom: 12vh;
