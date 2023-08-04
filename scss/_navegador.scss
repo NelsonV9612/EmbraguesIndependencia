@@ -47,33 +47,62 @@
             display: block;
         }
     }
+  
     .nav__list{
         display: flex;
         margin: 0 20px 0;
         align-items: center;
         @include mobile{
             visibility: hidden;
+            overflow: hidden;
             position: absolute;
             flex-direction: column;
             width: 100vw;
-            height: 20vh;
             margin: 0;
-            right: 0;
+            max-height: 0;
+            right: 0; 
             top:100px;
             align-items: start;
-            background-color: #51A3E1;
+            background-color: $adornoTitulo;
             justify-content: space-evenly;
             align-items: center;
+            transition: all 500ms;
         }
-        .nav__link{
-            text-decoration: none;
-            margin: 0px 20px 0px;
-            color: $fondo;
+        li{
+            @include mobile{
+                margin: 20px 0;
+            }
+            &::after{
+                content: " ";
+                background-color: $adornoTitulo;
+                height: 4px; 
+                margin: auto;
+                width: 0;
+                display: block;
+                transition: width 400ms;
+            }
+            &:hover::after{
+                width: 100%;
+            }  
+            .nav__link{
+                text-decoration: none;
+                margin: 0px 20px 0px;
+                color: $fondo;
+                &:active{
+                    color: #f33;
+                }
+               
+            }
         }
+        
+    }
+    .nav_height{
+        max-height: 30vh;
     }
     .nav__list--visible{
         @include mobile{
             visibility: visible;
+        
         }
     }
 }

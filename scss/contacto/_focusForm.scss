@@ -1,0 +1,8 @@
+@mixin input{
+    border: none;
+    border-bottom: 2px solid $adornoTitulo;
+    &:focus{
+        outline: none !important;
+        background: linear-gradient(to bottom,transparent,$sombrasBordes);;
+    }
+}

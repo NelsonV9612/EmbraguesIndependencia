@@ -7,11 +7,12 @@ open_nav.addEventListener("click",() => {
     nav.classList.add("nav__list--visible");
     open_nav.classList.add("nav__open--hidden");
     close__nav.classList.add("nav__close--visible");
+    nav.classList.add("nav_height");
 });
 
 close__nav.addEventListener("click",() => {
     nav.classList.remove("nav__list--visible");
     open_nav.classList.remove("nav__open--hidden");
     close__nav.classList.remove("nav__close--visible");
-    
+    nav.classList.remove("nav_height");
 });

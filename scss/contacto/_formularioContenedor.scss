@@ -1,0 +1,39 @@
+.contact__container{
+    background: url(../../banner/direccion.png) ;
+    height: 55em;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    /* position: relative; */
+    @include desktop{
+        height: 70rem;
+    }
+    @include mobile{
+        height: 60rem;
+    }
+    .form{
+        background: $fondo;
+        width: 70%;
+        margin: auto;
+        height: 70vh;
+        border: 2px solid #ccc;
+        position: absolute;
+        left: 15%;
+        top: 75%;
+        display: flex;
+        align-items: center;
+        @include desktop{
+            flex-direction: column;
+            height: 50rem;
+            top: 60%;
+            justify-content: space-evenly;
+        }
+        
+        @include mobile{
+            position: relative;
+            width: 100%;
+            left: 0%;
+            top: 20%;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.contact__title{
+    height: 5em;
+    width: 100%;
+    background:#ccc;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 50px;
+    .contact__h2{
+        padding-top: .3em;
+        font-size: 2em;
+        line-height: 1.5em;
+        margin-left: 5%;
+        &::after{
+            content: " ";
+            width: 45px;
+            height: 5px;
+            background-color: $adornoTitulo;
+            display: block;
+        }
+    }
+}

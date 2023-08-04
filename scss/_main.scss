@@ -1,0 +1,8 @@
+.main{
+    background-color: $fondo;
+    width: 90%;
+    margin: auto;
+    @include tablet{
+        width: 100%;
+    } 
+}

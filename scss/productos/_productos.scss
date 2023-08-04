@@ -1,0 +1,110 @@
+.product-type{
+    padding: 0 2%;
+    margin-bottom: 1em;
+    @include tablet-landscape{
+        height: auto;
+    }
+    @include tablet{
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include mobile{
+        width: 100%;
+    }
+    .product__list{
+        border-top: 1px solid $sombrasBordes;
+        border-left: 1px solid $sombrasBordes;
+        border-right: 1px solid $sombrasBordes;
+        display: flex;
+        justify-content: space-evenly;
+        height: 240px;
+        align-items: center;
+        @include tablet-landscape{
+            flex-direction: column;
+            height: auto;
+            border: 2px solid $texto ;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        &:last-child{
+            border-bottom: 1px solid $sombrasBordes;
+        }
+        .intro-img{ 
+            min-width:  400px;
+            min-height: 220px;
+            @include tablet-landscape{
+                background:url(../../banner/fondo_producto.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-width: 100%;
+                box-shadow: 0px 1px 4px $texto;
+                background-origin: border-box;
+            }
+            img{
+                min-width: 100%;
+                max-height: 210px;
+                object-fit: contain;
+                transition: transform .5s;
+                filter: drop-shadow(2px 2px 6px $texto);
+                &:hover{
+                    transform: scale(1.05);
+                }
+                @include tablet-landscape{
+                    backdrop-filter: blur(3px);
+                    background-size: cover;
+                }
+            }
+        }
+        .article{
+            display: grid;
+            grid-template-columns: minmax(350px,450px);
+            grid-template-rows: repeat(3, 4em);
+            padding: 30px;
+            align-items: center;
+            @include tablet-landscape{
+                justify-items: center;
+            }
+            @include mobile{
+                grid-template-columns: auto;
+                padding: 0;
+            }
+            .article__header{
+                justify-self: flex-start;
+                @include tablet-landscape{
+                    justify-self: center;
+                }
+                .article__title{
+                    font-size: 2em;
+                    text-shadow: 1px 1px 1px $sombrasBordes;
+                    @include desktop-md{
+                        font-size: 1.7em;
+                    }
+                    @include mobile{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .intro-product{
+                padding-bottom: 1em;
+                @include desktop-md{
+                    padding: 0;
+                }
+                p{
+                    line-height: 25px;
+                    width: 90%;
+                    @include desktop-md{
+                        line-height: normal;
+                    }
+                    @include tablet-landscape{
+                        text-align: center;
+                        width: auto;
+                    }
+                }
+            }
+            .article-consult{
+                margin-left: 0;
+            }
+        }
+    }
+}

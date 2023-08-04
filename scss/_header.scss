@@ -1,0 +1,16 @@
+.header{
+    height: 20vh;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: $colorPpal;
+    box-shadow: 0px 1px 3px $colorPpal;
+    z-index: 9999;
+    @include desktop{
+        height: auto;
+    }
+    @include mobile{
+        position: relative;
+        height: 100px;
+    }  
+}

@@ -1,0 +1,57 @@
+.product{
+        display: flex;
+        height: 40vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+        border-top: 1px solid $sombrasBordes;
+        @include tablet{
+            flex-direction: column;
+            height: fit-content;
+            flex-wrap: wrap;
+        }
+        .product__img{
+            width: 50%;
+            height: 100%;
+            padding: 2%;
+            @include tablet{
+                width: 65%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                align-self: center;
+                object-fit: contain;
+            }
+        }
+        .product__description{
+            width: 60%;
+            padding: 5%;
+            @include tablet{
+                width: 100%;
+                padding: 2% 3%;
+            }
+            h2{
+                font-size: 3em;
+                font-weight: bold;
+                &::after{
+                    content: "";
+                    background-color: $adornoTitulo;
+                    display: block;
+                    width: 45px;
+                    height: 5px;
+                    margin-top: 10px;
+                }
+            }
+            .description{
+                line-height: 20px;
+                margin-top: 20px;
+                width: auto;
+                @include tablet{
+                    height: auto;
+                    padding: 0;
+                }
+            }
+        }
+    }

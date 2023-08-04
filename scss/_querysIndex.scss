@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin desktop-md{
+    @media screen and (max-width: 1150px){
+        @content;
+    }
+}
 
 @mixin tablet-landscape{
     @media screen and (max-width: 992px){

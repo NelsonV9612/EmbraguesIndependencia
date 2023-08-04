@@ -1,5 +1,9 @@
 @import "variables";
+@import "tipografia";
 @import "querysIndex";
+@import "header";
+@import "main";
+@import "footer";
 @import "botones";
 @import "navegador";
 @import "products";
@@ -8,49 +12,3 @@
 @import "marcas";
 @import "contactoFooter";
 @import "derechos";
-
-/* -------------header--------------- */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: radial-gradient(circle,$fondo,#ccc);
-}
-.header{
-    height: 20vh;
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    background-color: $colorPpal;
-    box-shadow: 0px 1px 3px $colorPpal;
-    z-index: 9999;
-    @include desktop{
-        height: auto;
-    }
-    @include mobile{
-        position: relative;
-        height: 100px;
-    }
-    
-}
-
-/* ----------body---------- */
-.main{
-    background-color: $fondo;
-    width: 90%;
-    margin: auto;
-    @include tablet{
-        width: 100%;
-    } 
-}
-
-/* ------------footer------------ */
-.footer{
-    width: 100%;
-    min-height: 25vh;
-    margin-top: auto;
-    outline: 1px solid #ccc;
-    background-color: $colorPpal;
-    position:relative;
-    
-    
-}
-

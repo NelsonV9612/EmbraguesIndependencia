@@ -1,5 +1,5 @@
 .button{
-    background: #887;
+    background: $sombrasBordes;
     margin-left: 20px;
     width: 7rem;
     height: 1.8rem;
@@ -7,6 +7,10 @@
     color: $fondo;
     justify-content: space-evenly;
     opacity: 1;
+    transition: transform 150ms;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 .button--products{
     background: $botonesTexto;
@@ -26,13 +30,17 @@
     bottom: 12vh;
     right: 5vh;
     z-index: 9999;
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.1);
+    }
     @include tablet{
         display: none;
     }
     img{
         width: 3em;
         height: 3em;
-        filter: drop-shadow(1px 2px 3px #000);
+        filter: drop-shadow(1px 2px 3px $texto);
     
     }
 }
