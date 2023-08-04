@@ -27,27 +27,18 @@
         }
         
     }
+    /* oculto icono de menú hamburguesa */
     .nav__open--hidden{
         @include mobile{
             visibility: hidden;
         }
     }
+    /* oculto incono para cerrar menú hamburguesa */
     .nav__button--close{
         @include mobile{
             display: none;
         }
     }
-    .nav__close--visible{
-        @include mobile{
-            display: block;
-        }
-    }
-    .nav__close--visible{
-        @include mobile{
-            display: block;
-        }
-    }
-  
     .nav__list{
         display: flex;
         margin: 0 20px 0;
@@ -62,15 +53,15 @@
             max-height: 0;
             right: 0; 
             top:100px;
-            align-items: start;
             background-color: $adornoTitulo;
-            justify-content: space-evenly;
             align-items: center;
             transition: all 500ms;
         }
         li{
             @include mobile{
                 margin: 20px 0;
+                width: 100%;
+                text-align: center;
             }
             &::after{
                 content: " ";
@@ -89,9 +80,13 @@
                 margin: 0px 20px 0px;
                 color: $fondo;
                 &:active{
-                    color: #f33;
+                    color: $botonesTexto;
                 }
-               
+                @include mobile{
+                    margin: 0;
+                    display: block;
+                    width: 100%;
+                }
             }
         }
         
@@ -100,9 +95,6 @@
         max-height: 30vh;
     }
     .nav__list--visible{
-        @include mobile{
-            visibility: visible;
-        
-        }
+        visibility: visible;
     }
 }

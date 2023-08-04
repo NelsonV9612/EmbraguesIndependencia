@@ -8,6 +8,20 @@
         height: auto;
         grid-template-rows: 300px 300px 60px;
     }
+    .carousel-indicators{
+        bottom:20%;
+        @include tablet{
+            bottom: 7%;
+        }
+        @include mobile{
+            bottom: 2%;
+        }
+        .indicadores{
+            background-color: $texto; 
+            margin: 0 10px;
+        }
+    }
+    
     .detalle__producto{
         grid-column: span 2;
         grid-row: span 2;

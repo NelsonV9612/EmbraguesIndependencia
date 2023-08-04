@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto", sans-serif;
   background: radial-gradient(circle, #fff, #ccc);
@@ -99,6 +100,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2% 3%;
+  /* oculto icono de menú hamburguesa */
+  /* oculto incono para cerrar menú hamburguesa */
 }
 .nav .nav__logo {
   margin: 10px;
@@ -140,16 +143,6 @@ body {
     display: none;
   }
 }
-@media screen and (max-width: 576px) {
-  .nav .nav__close--visible {
-    display: block;
-  }
-}
-@media screen and (max-width: 576px) {
-  .nav .nav__close--visible {
-    display: block;
-  }
-}
 .nav .nav__list {
   display: flex;
   margin: 0 20px 0;
@@ -166,9 +159,7 @@ body {
     max-height: 0;
     right: 0;
     top: 100px;
-    align-items: start;
     background-color: #51A3E1;
-    justify-content: space-evenly;
     align-items: center;
     transition: all 500ms;
   }
@@ -176,6 +167,8 @@ body {
 @media screen and (max-width: 576px) {
   .nav .nav__list li {
     margin: 20px 0;
+    width: 100%;
+    text-align: center;
   }
 }
 .nav .nav__list li::after {
@@ -196,15 +189,20 @@ body {
   color: #fff;
 }
 .nav .nav__list li .nav__link:active {
-  color: #f33;
+  color: #DB6221;
+}
+@media screen and (max-width: 576px) {
+  .nav .nav__list li .nav__link {
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
 }
 .nav .nav_height {
   max-height: 30vh;
 }
-@media screen and (max-width: 576px) {
-  .nav .nav__list--visible {
-    visibility: visible;
-  }
+.nav .nav__list--visible {
+  visibility: visible;
 }
 
 .products {
@@ -219,6 +217,23 @@ body {
     height: auto;
     grid-template-rows: 300px 300px 60px;
   }
+}
+.products .carousel-indicators {
+  bottom: 20%;
+}
+@media screen and (max-width: 870px) {
+  .products .carousel-indicators {
+    bottom: 7%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .products .carousel-indicators {
+    bottom: 2%;
+  }
+}
+.products .carousel-indicators .indicadores {
+  background-color: #000;
+  margin: 0 10px;
 }
 .products .detalle__producto {
   grid-column: span 2;
