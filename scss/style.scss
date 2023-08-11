@@ -1,6 +1,7 @@
+/* --------------index------------------- */
 @import "variables";
 @import "tipografia";
-@import "querysIndex";
+@import "mediaQuerys";
 @import "header";
 @import "main";
 @import "footer";
@@ -12,3 +13,14 @@
 @import "marcas";
 @import "contactoFooter";
 @import "derechos";
+/* ---------------productos----------------- */
+@import "productos/productoContenedor";
+@import "productos/presentacionProducto";
+@import "productos/productos";
+/* -----------------contacto------------------- */
+@import "contacto/contactoTitulo";
+@import "contacto/tituloFormulario";
+@import "contacto/formularioContenedor";
+@import "contacto/focusForm";
+@import "contacto/formulario";
+@import "contacto/formularioContacto";
